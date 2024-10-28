@@ -9,7 +9,7 @@ spec:
     project: expense
     component: frontend
     environment: dev
-  port:
+  ports:
   - protocol: TCP
     port: 80
     targetPort: 80

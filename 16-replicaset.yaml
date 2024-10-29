@@ -1,0 +1,25 @@
+apiVersion: app/v1
+kind: ReplicaSet
+metadata:
+  name: nginx 
+  labels: 
+    app: nginx
+    tier: frontend
+spec:
+  replicas: 3
+  selectors:
+    matchLabels:
+      tier: frontend
+      app: nginx
+# Below is called POD definition
+template:
+  metadata:
+    labels:
+      tier: frontend
+      app: nginx
+      project: some-project
+  spec:
+    containers:
+    - name: nginx
+      image: nginx:stable-perl        
+

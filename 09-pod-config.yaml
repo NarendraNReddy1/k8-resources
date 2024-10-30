@@ -22,7 +22,7 @@
 #     #       key: trainer        
 
 kind: Pod
-apiVersion :v1
+apiVersion: v1
 metadata:
   name: pod-config
 spec:

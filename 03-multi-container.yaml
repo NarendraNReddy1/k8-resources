@@ -1,11 +1,26 @@
+# kind: Pod
+# apiVersion: v1
+# metadata:
+#   name: multi-container
+# spec:
+#   containers: 
+#   - name: nginx
+#     image: nginx
+#   - name: alma
+#     image: "almalinux:9"
+#     command: ["sleep","2000"]
+
 kind: Pod
 apiVersion: v1
 metadata:
-  name: multi-container
+  name: multi
+  labels:
+    trainer: NNR
+    duration: 120
 spec:
-  containers: 
+  containers:
   - name: nginx
-    image: nginx
-  - name: alma
-    image: "almalinux:9"
+    image: nginx 
+  - image: alma
+    image: "almalinux:9"      
     command: ["sleep","2000"]

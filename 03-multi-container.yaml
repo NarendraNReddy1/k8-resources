@@ -15,8 +15,8 @@ apiVersion: v1
 metadata:
   name: multi
   labels:
-    trainer: "NNR"
-    duration: "120"
+    trainer: NNR
+    duration: NNR1
 spec:
   containers:
   - name: nginx

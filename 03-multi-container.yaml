@@ -21,6 +21,6 @@ spec:
   containers:
   - name: nginx
     image: nginx 
-  - image: alma
+  - name: alma
     image: "almalinux:9"      
     command: ["sleep","2000"]
